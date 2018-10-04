@@ -18,7 +18,7 @@ output: html_document
 
 
 # Задание № 1
-# Исполььзуйте команду readlines для загрузки файла
+# Используйте команду readlines для загрузки файла
 ```{r}
 rating <- readLines("https://github.com/SergeyMirvoda/MD-DA-2018/tree/master/data/forbes.htm")
 ```
