@@ -44,7 +44,7 @@ rating.checks <- regmatches(rating, regexpr("[$][,0-9]+ [BM]", rating))
 #Проверьте следующее:
 #Должно быть ровно сто значений.
 ```{r}
-length(rating.checks) == 100
+stopifnot(length(rating.checks) == 100)
 ```
 #Самый большой доход должен быть доход Билла Гейтса
 #Такой доход должен быть в списке один раз.

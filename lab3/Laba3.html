@@ -150,18 +150,18 @@ $(document).ready(function () {
 <h1>Задание № 1</h1>
 </div>
 <div id="--readlines---" class="section level1">
-<h1>Исполььзуйте команду readlines для загрузки файла</h1>
+<h1>Используйте команду readlines для загрузки файла</h1>
 <pre class="r"><code>rating &lt;- readLines(&quot;https://github.com/SergeyMirvoda/MD-DA-2018/tree/master/data/forbes.htm&quot;)</code></pre>
 </div>
 <div id="---" class="section level1">
 <h1>Сколько строк в файле?</h1>
 <pre class="r"><code>length(rating)</code></pre>
-<pre><code>## [1] 8824</code></pre>
+<pre><code>## [1] 8821</code></pre>
 </div>
 <div id="---" class="section level1">
 <h1>Сколько символов в файле?</h1>
 <pre class="r"><code>sum(nchar(rating))</code></pre>
-<pre><code>## [1] 784024</code></pre>
+<pre><code>## [1] 784069</code></pre>
 </div>
 <div id="-------grep---------html." class="section level1">
 <h1>Напишите шаблон регулярного выражения и используйте функцию grep, чтобы извлечь размер дохода из данных в векторе html.</h1>
@@ -184,8 +184,7 @@ length(rating.check) == 100</code></pre>
 </div>
 <div id="----." class="section level1">
 <h1>Должно быть ровно сто значений.</h1>
-<pre class="r"><code>length(rating.checks) == 100</code></pre>
-<pre><code>## [1] TRUE</code></pre>
+<pre class="r"><code>stopifnot(length(rating.checks) == 100)</code></pre>
 </div>
 <div id="-------" class="section level1">
 <h1>Самый большой доход должен быть доход Билла Гейтса</h1>
@@ -356,7 +355,7 @@ print(Household_net_worth * 100 / sum(worths))</code></pre>
 <li>текстом;</li>
 <li>регулярными выражениями для извлечения данных;</li>
 <li>переписыванием существующего кода;</li>
-<li>асимметричными распределениями. ######</li>
+<li>асимметричными распределениями.</li>
 </ol>
 </div>
 </div>
